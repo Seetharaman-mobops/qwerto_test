@@ -1,0 +1,513 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#b4afaf">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clMain"
+        android:padding="2dp"
+        >
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:padding="2dp"
+
+       >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/llHoriz"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/goa"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/ivIcon"
+
+                   />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sunburn, Goa - 4.2km"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="#3d4eff"
+                        android:paddingBottom="4dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="David Guetta takes over Goa this December at Sunburn #Tripmodeon #Nothingbutthebeat "
+                        android:id="@+id/tvDesc1"
+                        android:paddingTop="4dp"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:id="@+id/ivMain"
+                    android:src="@drawable/sunburn"
+                    android:scaleType="fitXY"
+                    android:layout_margin="0dp"
+                    android:cropToPadding="false" />
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_down"
+                    android:layout_alignBottom="@+id/ivMain"
+                    android:layout_alignRight="@+id/ivMain"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="fitCenter"
+                    android:background="#00000000"
+                    android:id="@+id/ibDown"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llMain"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Sunburn Goa 2015"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Small Text "
+                    android:id="@+id/tvDesc2"
+                    android:paddingTop="4dp"
+                    android:textColor="#000000"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_dashboard"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivTime"
+                        android:tint="#615f5f"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="7 pm Dec 27, 2015 - 7 pm Dec 30, 2015"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/ivLoc"
+                        android:tint="#615f5f"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Vagator, Goa"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_money"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/ivMoney"
+                        android:tint="#615f5f"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Pricing"
+                        android:textColor="#000000"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="2dp"
+                    android:background="#2196f3"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:layout_weight="72"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Early bird offer"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rs. 350"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="2dp"
+                    android:background="#2196f3"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:layout_weight="72"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Exclusive fan pass"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rs. 1500"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="2dp"
+                    android:background="#2196f3"
+                    android:weightSum="100"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="12dp"
+                        android:layout_weight="72"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Drinks"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Free"
+                        android:textColor="#000000"
+                        android:background="#ffffff"
+                        />
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="right"
+                    >
+
+                    <ImageButton
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_up"
+                        android:layout_marginRight="12dp"
+                        android:scaleType="fitCenter"
+                        android:background="#ffffff"
+                        android:id="@+id/ibUp"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000000"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llEnd"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:padding="4dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="56">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_calendar_grey"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/ivCal"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rishi and 202 are going"
+                            android:textColor="#000000"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_mail"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/ivInvite"
+
+                            android:tint="#615f5f" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="8dp"
+                            android:gravity="center_vertical"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="55 Invites"
+                            android:textColor="#000000"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="2"
+                    android:background="#5c5a5a" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="42"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_chat"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/ivChat"
+                        android:tint="#615f5f" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chat"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_height="52dp"
+            android:layout_width="52dp"
+            app:layout_anchor="@id/clMain"
+            app:layout_anchorGravity="top|right|end"
+            android:src="@drawable/ic_search"
+            android:scaleType="center"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="70dp"
+            android:clickable="true"
+            android:id="@+id/fabSearch"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
